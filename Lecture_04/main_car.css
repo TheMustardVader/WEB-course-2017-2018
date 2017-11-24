@@ -1,0 +1,66 @@
+.tesla{
+	    background-image: url("https://cacsw.org/wp-content/uploads/2017/09/2019-Tesla-Roadster-red-color-4k-uhd-wallpaper.jpg");
+		background-position: top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;	
+	}
+.modelS{
+	    background-image: url("https://www.hdwallpapers.in/walls/tesla_model_s_2016-wide.jpg");
+		background-position: top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;	
+	}
+.modelX{
+	    background-image: url("https://insideevs.com/wp-content/uploads/2016/03/JL82939.jpg");
+		background-position: top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;	
+	}
+.model3{
+	    background-image: url("https://insideevs.com/wp-content/uploads/2016/04/Tesla-Model-3-wallpaper-black.jpg");
+		background-position: top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;	
+	}
+.roadster{
+	    background-image: url("https://insideevs.com/wp-content/uploads/2017/11/2020-tesla-roadster-3.jpg");
+		background-position: top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;	
+	}
+.energy{
+	    background-image: url("https://insideevs.com/wp-content/uploads/2013/10/tesla-model-s-supercharging-2.jpg");
+		background-position: top;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		position: relative;	
+	}
+#nav-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.title {
+    text-decoration: overline;
+    color: black;
+    text-align: left;
+    padding-left: 13%;
+    padding-top: 10%;
+}
+.section-title{
+	text-align: center;
+	color:black;
+	padding-top: 13%;
+   }
+
+ #serif{
+ 	font-family: "Times New Roman", Times, serif;
+ }
+
