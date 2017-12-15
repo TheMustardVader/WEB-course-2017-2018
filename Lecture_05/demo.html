@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <body>
+	Copy form<br>
+	Insert: <input type = "text" id = "field1"><br>
+	Output: <input type = "text" id = "field2"><br><br>
+		
+	<button onclick = "copyFunction()">Copy Text</button><br>
+	<script>
+	function copyFunction(){
+			document.getElementById("field2").value =
+                	document.getElementById("field1").value;
+		}
+	</script>
+	<p1>Click ANONYMOUS to change text.<br>
+	    I'm <span id = "name">ANONYMOUS.</span></p1>
+   	<script>
+		text = document.getElementById("name");
+		text.onclick = () => { text.innerHTML = "Enigma." };
+   	</script>
+ </body>
+</html>
