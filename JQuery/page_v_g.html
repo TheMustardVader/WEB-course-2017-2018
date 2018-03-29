@@ -1,0 +1,64 @@
+<!-- https://github.com/3phase/tues-workshop-wd-2017-2018 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hahha</title>
+	<style type="text/css">
+	body { background-color: #000;}
+	h1,h2,h3,h4,h5,h6 { color: #FFF; }
+	.change-color {width: 300px; height: 300px; float: left; color: #FFF; border: 1px solid #fff;}
+	</style>
+	<script type="text/javascript" 
+			src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+	<input type="text" class="test-input" placeholder="Name">
+	<br>
+	<button class="submit-button">Submit</button>
+	<button class="delete-button">Delete</button>
+
+	<h3>Change background color:</h3>
+	
+	<div class="color-changers">
+		<!-- <div class="change-color" data-attr-color="00FF00">Green</div>
+		<div class="change-color" data-attr-color="000000">Black</div> -->
+	</div>
+
+	<div class="change-color with-image" data-attr-color="https://newevolutiondesigns.com/images/freebies/new-york-manhattan-preview.jpg">Image</div>
+
+
+	<script>
+	$(document).ready(function() {
+		$(".submit-button").on("click", function() {
+			alert($(".test-input").val());
+		});
+		$(".delete-button").on("click", function() {
+			$(".test-input").val("");
+		});
+
+		for (i = 1; i <= 6; i++) {
+			$(".color-changers").append("<div class=\"change-color\" data-attr-color=\"" + i + i + i + "\">Dynamically generated</div>");
+
+		}
+
+		$(".change-color").on("click", function() {
+			$("body").css({
+				"background-image": "none",
+				"background-color": "#" + $(this).attr("data-attr-color")
+			});
+		});
+
+		$(".change-color.with-image").on("click", function() {
+			$("body").css({
+				"background": "url("+$(this).attr("data-attr-color")+")",
+				"background-size": "cover"
+			});
+		});
+
+	});
+	</script>
+</body>
+</html>

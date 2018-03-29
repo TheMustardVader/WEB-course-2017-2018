@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Form</title>
+
+	<style type="text/css">
+	body { height: 2000px; }
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<script src="http://api.jquery.com/resources/events.js"></script>
+<script>
+$(document).ready(function() {
+
+	"use strict";
+
+	$("#submit-button").on("click", function() {
+			alert("haha");
+	});
+
+	var xTriggered = 0;
+	var combinationWord = "pedal";
+
+	$("body").keypress(function( event ) {
+	  if ( event.which == 80 ) {
+	  	  event.preventDefault();
+		  xTriggered++;
+		  var msg = "Handler for .keypress() called " + xTriggered + " time(s).";
+		  $.print( msg, "html" );
+
+		  // if (xTriggered >= combinationWord.length) {
+		  // 	xTriggered = 0;
+		  // }
+	  }
+	  
+	});
+
+});
+</script>
+
+</body>
+</html>
