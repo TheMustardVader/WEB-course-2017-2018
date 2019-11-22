@@ -18,6 +18,9 @@ Currently data source information. Instructions on how to use it are linked belo
 * [CSS-Tricks](https://css-tricks.com/) 
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+* [Flukeout](http://flukeout.github.io/)
+* [REGEXR](https://regexr.com/) 
 
-![altr text](http://static.simpledesktops.com/uploads/desktops/2016/02/08/moonRising.png.620x390_q100.png)
+<br/><br/>
+![altr text](https://www.jimdo.com/blog/wp-content/uploads/2018/01/optimizing-web-images-for-better-seo.jpg)
 
