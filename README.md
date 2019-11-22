@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+
+![altr text](https://www.jimdo.com/blog/wp-content/uploads/2018/01/optimizing-web-images-for-better-seo.jpg)
+
+
 ###  What is about?
 * [Portfolio](https://constantin.blob.core.windows.net/portfolio/index.html) - basic porfolio website 
 
@@ -20,7 +24,3 @@ Currently data source information. Instructions on how to use it are linked belo
 * [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
 * [Flukeout](http://flukeout.github.io/)
 * [REGEXR](https://regexr.com/) 
-
-<br/><br/>
-![altr text](https://www.jimdo.com/blog/wp-content/uploads/2018/01/optimizing-web-images-for-better-seo.jpg)
-
