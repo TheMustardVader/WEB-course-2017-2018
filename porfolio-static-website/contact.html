@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Work</title>
+    <title>Contact</title>
 
-     <!-- stylesheet -->
-     <link rel="stylesheet" href="style.css">
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="css/style.css">
 
-     <!-- bootstrap cdns -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- 
-     <!-- google fonts -->
-     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+   <!-- bootstrap cdns -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- terminal effect -->
-    <script src="t.min.js"></script>
+   <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-    <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css">
-    <script src="wow.min.js"></script>
+   <!-- terminal effect -->
+   <script src="js/t.min.js"></script>
+
+   <!-- for on scroll animations -->
+   <link rel="stylesheet" href="css/animate.css">
+   <script src="js/wow.min.js"></script>
+    
 </head>
 <body>
 
@@ -42,13 +43,13 @@
             </ul>
 
             <div id="toggle">
-                <div class="span">menu</div>
+                <div class="span">&#9776;</div>
             </div>
 
         </nav>
 
         <div id="resize">
-                <div class = "close-btn">close</div>
+                <div class = "close-btn">&#10005;</div>
 
                 <ul id="menu">
                     <li><a href="index.html">home<span>.</span></a></li>
@@ -63,32 +64,55 @@
         <!---------------------- content starts here ------------------------>
         <div class="container-fluid">
 
-                <div class="whitespace"></div>
-    
-                <div class="row">                
-    
-                    <div class="col-lg-3"></div> 
+            <div class="whitespace"></div>
 
-                    
-                    <div class="col-lg-6">
-    
-                        <h4>Design</h4>
-                        <p> 
-                                A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process.
-                        </p>
-                        <p>
-                                A verb to design expresses the process of developing a design. In some cases, the direct construction of an object without an explicit prior plan (such as in craftwork, some engineering, coding, and graphic design) may also be considered to be a design activity. 
-                            The design usually has to satisfy certain goals and constraints, may take into account aesthetic, functional, economic, or socio-political considerations, and is expected to interact with a certain environment.
-                        </p>
-                        
-                    </div>
-    
-                    <div class="col-lg-3"></div>
-    
-                    <div class="whitespace"></div>
-    
-                </div>
+            <div class="row">                
+
+                <div class="col-lg-2"></div>             
+            
+                <div class="col-lg-8 contentlab">
+                        <h5 id="contacttitle">You can find me here: </h5>
+                    <p>
+                       Fontys University of Applied Sciences is a Dutch university of applied sciences in several campuses located in the southern Netherlands.
+                       The three largest Fontys campuses are located in the cities of Eindhoven, Tilburg and Venlo. The name Fontys comes from the Latin word "fons" which means "source".
+                       Thus, Fontys wants to highlight that it is a source of knowledge for students. Fontys offers 200 bachelor's and master's study programmes in the fields of economics, technology, health care, social work, sports and teacher training.
+                    </p>
+                </div>          
+
+                <div class="col-lg-2"></div>
+                
             </div>
+
+            <div class="row">                
+
+                <div class="col-lg-3">    
+                        
+                </div>             
+
+                <!--Google map-->
+
+                <div class="col-lg-6 project" id="googleMap"></div>
+                
+                <!--Google Maps-->
+
+                <div class="col-lg-3"></div>
+                
+            </div>
+
+            <div class="row">                
+
+                <div class="col-lg-2">    
+                        
+                </div>             
+           
+                <div class="col-lg-8 contentlab">
+                    <p>Fontys University of Applied Sciences is a Dutch university of applied sciences with over 44.000 students in several campuses located in the southern Netherlands. The three largest Fontys campuses are located in the cities of Eindhoven, Tilburg and Venlo.</p>
+                </div>          
+
+                <div class="col-lg-2"></div>
+                
+            </div>
+        
         </div>
         <!---------------------- content ends here ------------------------>
 
@@ -147,6 +171,7 @@
     <!---------------------- scripts are here ------------------------>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <script type="text/javascript">
     // navigation starts here
     $("#toggle").click(function() {
@@ -176,6 +201,25 @@
     }, 0.1);
     // nav animation ends
     new WOW().init();
+    // Google maps starts here
+    function myMap() {
+        
+        var mapProp= {
+            center:new google.maps.LatLng(51.452301, 5.482194),
+            zoom:7,
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: mapProp, map: map});
+    }
+
+
+    // Google maps ends here
     </script>   
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN-FzjJbMRhpEa181_3ggU8qhtn78y86c&callback=myMap"></script>
+
 </body>
 </html>

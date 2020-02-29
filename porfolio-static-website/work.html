@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="harrnish">
-    
-    <title>Portfolio Website</title>
+
+    <title>Work</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- bootstrap cdns -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,14 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
     <!-- terminal effect -->
-    <script src="t.min.js"></script>
+    <script src="js/t.min.js"></script>
 
     <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css">
-    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
 
 </head>
 <body>
+
     <div class="wrapper">
         <!---------------------- navbar starts here ------------------------>
         <nav>
@@ -43,13 +43,13 @@
             </ul>
 
             <div id="toggle">
-                <div class="span">menu</div>
+                <div class="span">&#9776;</div>
             </div>
 
         </nav>
 
         <div id="resize">
-                <div class = "close-btn">close</div>
+                <div class = "close-btn">&#10005;</div>
 
                 <ul id="menu">
                     <li><a href="index.html">home<span>.</span></a></li>
@@ -58,72 +58,39 @@
                     <li><a href="contact.html">contact<span>.</span></a></li>
                 </ul>
         </div>
-
         <!---------------------- navbar ends here ------------------------>
 
-        <!---------------------- hero section starts here ------------------------>
-        <div class="hero">
-            <div class="header">
-                <h1 class="line anim-typewriter">Don't talk. Show me the code.</h1>
-            </div>
-        </div>
-
-        <div class="scroll-down"></div>
-        <!---------------------- hero section ends here ------------------------>
-
-        <!---------------------- projects starts here ------------------------>
+        <!---------------------- content starts here ------------------------>
         <div class="container-fluid">
-      
-            <h6>Selected projects</h6>
 
-            <div class="vertical"></div>
+                <div class="whitespace"></div>
+    
+                <div class="row">                
+    
+                    <div class="col-lg-3"></div> 
 
-            <div class="whitespace"></div>
-            <div class="whitespace"></div>
-
-            <div class="row">                
-
-                <div class="col-lg-6"></div> 
-                
-                <div class="col-lg-5 float-right project project1" onclick="location.href='project1.html'"></div>                
-
-                <div class="col-lg-1"></div>
+                    
+                    <div class="col-lg-6">
+    
+                        <h4>Design</h4>
+                        <p> 
+                                A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process.
+                        </p>
+                        <p>
+                                A verb to design expresses the process of developing a design. In some cases, the direct construction of an object without an explicit prior plan (such as in craftwork, some engineering, coding, and graphic design) may also be considered to be a design activity. 
+                            The design usually has to satisfy certain goals and constraints, may take into account aesthetic, functional, economic, or socio-political considerations, and is expected to interact with a certain environment.
+                        </p>
+                        
+                    </div>
+    
+                    <div class="col-lg-3"></div>
+    
+                    <div class="whitespace"></div>
+    
+                </div>
             </div>
-
-            <div class="whitespace"></div>
-
-            <div class="row">
-                <div class="col-lg-1"></div>
-
-                <div class="col-lg-5 float-left project project2" onclick="location.href='project2.html'"></div>
-           
-                <div class="col-lg-6"></div>
-            </div>
-
-            <div class="whitespace"></div>
-
-            <div class="row">
-                
-                <div class="col-lg-6"></div>
- 
-                <div class="col-lg-5 float-right project project3" onclick="location.href='project3.html'"></div>
-                
-                <div class="col-lg-1"></div>
-            </div>
-
-            <div class="whitespace"></div>
-
-            <div class="row">
-                <div class="col-lg-1"></div>
-
-                <div class="col-lg-5 project project4" onclick="location.href='project4.html'"></div>
-           
-                <div class="col-lg-6"></div>
-            </div>
-
-            <div class="whitespace"></div>
         </div>
-        <!---------------------- projects ends here ------------------------>
+        <!---------------------- content ends here ------------------------>
 
         <!---------------------- footer starts here ------------------------>
         <div class="footer">
@@ -175,8 +142,6 @@
             </div>
         </div>
         <!---------------------- footer ends here ------------------------>
-    
-        <br><br><br><br>
     </div>
 
     <!---------------------- scripts are here ------------------------>
@@ -211,7 +176,6 @@
     }, 0.1);
     // nav animation ends
     new WOW().init();
-    </script>
-    
+    </script>   
 </body>
 </html>

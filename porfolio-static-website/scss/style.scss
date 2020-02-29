@@ -1,43 +1,11 @@
-
-/*--------------- basic styling --------------- */
-html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      font-family: "Roboto Mono" !important;
-      background: #0f0f0f !important;
-      color: #fff !important;
-}
-
-p {
-      text-indent: 0.7em;
-      font-weight: lighter !important;
-}
-
-iframe {
-      width: 100%;
-      height: 500px;
-}
-
-.whitespace {
-      width: 100%;
-      height: 100px;
-}
-
-
-@media(max-width: 768px) {
-      .whitespace {
-            display: none;
-      }
-}
+@import "default.scss";
 
 /*--------------- typewriter effect --------------- */
 .line {
-      width: 24em;
+      width: 12em;
       top: 50%;
       margin: auto;
-      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      border-right: 2px solid $hr-color;
       text-align: center;
       white-space: nowrap;
       overflow: hidden;
@@ -45,16 +13,16 @@ iframe {
 }
 
 .anim-typewriter {
-      animation: typewriter 4s steps(40) 1s 1 normal both,
-      blinkTextCussor 500ms steps(40) infinite normal;
+      animation: typewriter 3s steps(28) 1s 1 normal both,
+      blinkTextCussor 500ms steps(28) infinite normal;
 }
-
+/* animation of the index page */
 @keyframes typewriter {
       from {
             width: 0;
       }
       to {
-            width: 18em;
+            width: 6em;
       }
 }
 
@@ -64,7 +32,7 @@ iframe {
                   width: 0;
             }
             to {
-                  width: 17em;
+                  width: 6em;
             }
       }
 }
@@ -81,7 +49,7 @@ iframe {
 /*--------------- navigation --------------- */
 nav {
       width: 100%;
-      background: #0f0f0f;
+      background: $black;
       height: 80px;
       position: fixed;
       z-index: 1;
@@ -96,7 +64,7 @@ nav #brand {
 }
 
 nav #brand a {
-      color: #fff;
+      color: $white;
       transition: all 0.3s ease-out;
 }
 
@@ -125,7 +93,7 @@ nav #menu li span {
 }
 
 nav #menu li a {
-      color: #fff;
+      color: $white;
 }
 
 nav #menu li a:hover {
@@ -138,7 +106,6 @@ nav #menu li a:hover {
       top: 20px;
       font-weight: 300;
       z-index: 2;
-      width: 30px;
       height: 30px;
       cursor: pointer;
       float: right;
@@ -149,7 +116,7 @@ nav #menu li a:hover {
 
 .close-btn {
       position: absolute;
-      right: 16px;
+      right: 30px;
       font-weight: 300;
       z-index: 2;
       cursor: pointer;
@@ -161,7 +128,7 @@ nav #menu li a:hover {
       z-index: 1;
       top: 0px;
       position: fixed;
-      background: #0f0f0f;
+      background: $black;
       width: 100%;
       height: 100%;
       visibility: hidden;
@@ -195,7 +162,7 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-      color: #fff;
+      color: $white;
 }
 
 #resize #menu li a:hover {
@@ -212,7 +179,6 @@ nav #menu li a:hover {
             visibility: visible;
             opacity: 1;
             margin-top: 6px;
-            margin-right: 4px;
       }
 
       nav #brand {
@@ -237,7 +203,7 @@ nav #menu li a:hover {
       #resize {
             visibility: hidden !important;
       }
-}
+}    
 
 /*--------------- hero section --------------- */
 .hero {
@@ -273,8 +239,8 @@ nav #menu li a:hover {
       text-shadow: 0;
       width: 13px;
       height: 13px;
-      border-bottom: 2px solid #fff;
-      border-right: 2px solid #fff;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
       -webkit-transform: translate(-50%, 0) rotate(45deg);
       animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
@@ -300,7 +266,7 @@ h6 {
 
 .vertical {
       margin-top: 40px;
-      border-left: 1px solid #fff;
+      border-left: 1px solid $white;
       height: 80px;
       position: absolute;
       left: 50%;
@@ -308,6 +274,40 @@ h6 {
 
 .project {
       height: 500px;
+}
+
+.project:hover {
+      opacity: 0.8;
+}
+
+.project:hover .overlay {
+      opacity: 1;
+}
+
+.overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+}
+    
+
+    
+.text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
 }
 
 .project1 {
@@ -320,7 +320,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: $white;
       display: block;
       left: -20%;
       top: 50%;
@@ -337,7 +337,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: $white;
       display: block;
       top: 50%;
       left: 90%;
@@ -355,7 +355,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: $white;
       display: block;
       top: 50%;
       left: -20%;
@@ -372,7 +372,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: $white;
       display: block;
       top: 50%;
       left: 90%;
@@ -385,7 +385,7 @@ h6 {
 }
 
 .aboutme {
-      background: url(https://i.ibb.co/vQ5Xj8q/portrait.jpg) no-repeat 50% 50%;
+      background: url(https://scontent-ams4-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/83785923_168900971008379_5134278615121988137_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Mc9zmoJ9o8wAX94JNj_&oh=2d899773a9e2ae81a397db2f0dc2e423&oe=5E8EA496) no-repeat 50% 50%;
       background-size: cover;
 }
 
@@ -433,7 +433,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: $white;
       display: block;
       left: 110%;
       right: 0;
@@ -446,7 +446,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: $white;
       display: block;
       left: 110%;
       right: 0;
@@ -494,7 +494,7 @@ h6 {
 }
 
 .hr {
-      background: rgba(255, 255, 255, 0.2);
+      background: $hr-color;
       height: 1px;
 }
 
@@ -504,13 +504,13 @@ h6 {
 }
 
 .info p {
-      color: grey;
+      color: $grey;
       font-weight: lighter;
 }
 
 .info li {
       font-weight: lighter;
-      color: #fff;
+      color: $white;
       font-size: 18px;
       padding-left: 20px;
 }
@@ -522,7 +522,7 @@ h6 {
       height: 4px;
       width: 4px;
       margin-right: 6px;
-      background: #2b98b9;
+      background: $fb-color;
 }
 
 
@@ -533,7 +533,7 @@ h6 {
       height: 4px;
       width: 4px;
       margin-right: 6px;
-      background: #fcaf45;
+      background: $ig-color;
 }
 
 
@@ -544,7 +544,7 @@ h6 {
       height: 4px;
       width: 4px;
       margin-right: 6px;
-      background: #b9b9b9;
+      background: $git-color;
 }
 
 #media, #address {
@@ -556,7 +556,7 @@ h6 {
 }
 
 #media ul > li > a{
-      color: white;
+      color: $white;
       text-decoration: none;
 }
 
@@ -585,7 +585,7 @@ h6 {
 .hero-content p {
       font-weight: 300;
       line-height: 36px;
-      color: grey;
+      color: $grey;
 }
 
 .hero-content h6 {
@@ -634,7 +634,7 @@ h6 {
 #contact-form label {
       display: block;
       font-size: .8em;
-      color: #999;
+      color: $grey;
       padding-left: 5px;
 }
 
@@ -644,7 +644,7 @@ h6 {
       border: none;
       resize: vertical;
       background: transparent;
-      color: #fff;
+      color: $white;
       font-weight: bolder;
 }
 
@@ -659,7 +659,7 @@ textarea:focus {
 }
 
 .textarea {
-      border-bottom: 1px solid #dfdfdf;
+      border-bottom: 1px solid $light-white;
 }
 
 .send {
@@ -667,14 +667,14 @@ textarea:focus {
       text-transform: uppercase;
       padding: 20px 30px;
       background: transparent;
-      color: #dfdfdf;
+      color: $light-white;
       font-size: 14px;
       letter-spacing: 2px;
 }
 
 .send:hover {
-      background: #dfdfdf;
-      color: #101010;
+      background: $light-white;
+      color: $light-black;
 }
 
 @media(max-width: 759px) {
@@ -687,7 +687,7 @@ textarea:focus {
 /*--------------- project page --------------- */
 
 .prev, .next p {
-      color: grey;
+      color: $grey;
 }
 
 .prev p {

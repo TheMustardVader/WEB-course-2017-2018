@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Contact</title>
+    <meta name="author" content="harrnish">
+    
+    <title>Portfolio Website</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- bootstrap cdns -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -18,15 +19,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
     <!-- terminal effect -->
-    <script src="t.min.js"></script>
+    <script src="js/t.min.js"></script>
 
     <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css">
-    <script src="wow.min.js"></script>
-    
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+
 </head>
 <body>
-
     <div class="wrapper">
         <!---------------------- navbar starts here ------------------------>
         <nav>
@@ -43,13 +43,13 @@
             </ul>
 
             <div id="toggle">
-                <div class="span">menu</div>
+                <div class="span">&#9776;</div>
             </div>
 
         </nav>
 
         <div id="resize">
-                <div class = "close-btn">close</div>
+                <div class = "close-btn">&#10005;</div>
 
                 <ul id="menu">
                     <li><a href="index.html">home<span>.</span></a></li>
@@ -61,60 +61,85 @@
 
         <!---------------------- navbar ends here ------------------------>
 
-        <!---------------------- content starts here ------------------------>
-        <div class="container-fluid">
+        <!---------------------- hero section starts here ------------------------>
+        <div class="hero">
+            <div class="header">
+                <h1 class="line anim-typewriter">Portfolio</h1>
+            </div>
+        </div>
 
+        <div class="scroll-down"></div>
+        <!---------------------- hero section ends here ------------------------>
+
+        <!---------------------- projects starts here ------------------------>
+        <div class="container-fluid">
+      
+            <h6>Selected projects</h6>
+
+            <div class="vertical"></div>
+
+            <div class="whitespace"></div>
             <div class="whitespace"></div>
 
             <div class="row">                
 
-                <div class="col-lg-2"></div>             
-            
-                <div class="col-lg-8 contentlab">
-                        <h5 id="contacttitle">You can find me here: </h5>
-                    <p>
-                       Fontys University of Applied Sciences is a Dutch university of applied sciences in several campuses located in the southern Netherlands.
-                       The three largest Fontys campuses are located in the cities of Eindhoven, Tilburg and Venlo. The name Fontys comes from the Latin word "fons" which means "source".
-                       Thus, Fontys wants to highlight that it is a source of knowledge for students. Fontys offers 200 bachelor's and master's study programmes in the fields of economics, technology, health care, social work, sports and teacher training.
-                    </p>
-                </div>          
-
-                <div class="col-lg-2"></div>
+                <div class="col-lg-6"></div> 
                 
+                <div class="col-lg-5 float-right project project1" onclick="location.href='project1.html'">
+                    <div class="overlay">
+                        <div class="text">Project</div>
+                    </div>
+                </div>                
+
+                <div class="col-lg-1"></div>
             </div>
 
-            <div class="row">                
+            <div class="whitespace"></div>
 
-                <div class="col-lg-3">    
-                        
-                </div>             
+            <div class="row">
+                <div class="col-lg-1"></div>
 
-                <!--Google map-->
-
-                <div class="col-lg-6 project" id="googleMap"></div>
-                
-                <!--Google Maps-->
-
-                <div class="col-lg-3"></div>
-                
-            </div>
-
-            <div class="row">                
-
-                <div class="col-lg-2">    
-                        
-                </div>             
+                <div class="col-lg-5 float-left project project2" onclick="location.href='project2.html'">
+                    <div class="overlay">
+                        <div class="text">Project</div>
+                    </div>
+                </div>
            
-                <div class="col-lg-8 contentlab">
-                    <p>Fontys University of Applied Sciences is a Dutch university of applied sciences with over 44.000 students in several campuses located in the southern Netherlands. The three largest Fontys campuses are located in the cities of Eindhoven, Tilburg and Venlo.</p>
-                </div>          
-
-                <div class="col-lg-2"></div>
-                
+                <div class="col-lg-6"></div>
             </div>
-        
+
+            <div class="whitespace"></div>
+
+            <div class="row">
+                
+                <div class="col-lg-6"></div>
+ 
+                <div class="col-lg-5 float-right project project3" onclick="location.href='project3.html'">
+                    <div class="overlay">
+                        <div class="text">Project</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-1"></div>
+            </div>
+
+            <div class="whitespace"></div>
+
+            <div class="row">
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-5 project project4" onclick="location.href='project4.html'">
+                    <div class="overlay">
+                        <div class="text">Project</div>
+                    </div>
+                </div>
+           
+                <div class="col-lg-6"></div>
+            </div>
+
+            <div class="whitespace"></div>
         </div>
-        <!---------------------- content ends here ------------------------>
+        <!---------------------- projects ends here ------------------------>
 
         <!---------------------- footer starts here ------------------------>
         <div class="footer">
@@ -166,12 +191,13 @@
             </div>
         </div>
         <!---------------------- footer ends here ------------------------>
+    
+        <br><br><br><br>
     </div>
 
     <!---------------------- scripts are here ------------------------>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
     <script type="text/javascript">
     // navigation starts here
     $("#toggle").click(function() {
@@ -201,25 +227,7 @@
     }, 0.1);
     // nav animation ends
     new WOW().init();
-    // Google maps starts here
-    function myMap() {
-        
-        var mapProp= {
-            center:new google.maps.LatLng(51.452301, 5.482194),
-            zoom:7,
-        };
-
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: mapProp, map: map});
-    }
-
-
-    // Google maps ends here
-    </script>   
+    </script>
     
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN-FzjJbMRhpEa181_3ggU8qhtn78y86c&callback=myMap"></script>
-
 </body>
 </html>
