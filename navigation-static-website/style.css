@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313131;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353234;
+    height: 40px;
+    align-items: center;
+}
+a:hover{
+    color:#fff ;
+}
+.menu {
+    margin-left: 30px;
+}
+
+.logo {
+    font-size: 1.4em;
+}
+
+.settings {
+    display: inline-block;
+    position: relative;
+}
+
+.settings>a {
+    display: flex;
+    align-items: center;
+}
+
+.settings>a::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    right: 0px;
+    transform: rotate(135deg);
+    align-self: center;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 85px;
+}
+
+.drop a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.drop a:hover, .more a:hover {
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+
+.drop .settings>a {
+    display: flex;
+    align-items: center;
+}
+
+.drop .settings>a::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #313131;
+    border-right: 2px solid #313131;
+    position: absolute;
+    right: 5px;
+    transform: rotate(45deg);
+}
+
+.settings:hover .drop {
+    display: block;
+}
+
+/* --------- Extra ------------ */
+
+.extra {
+    margin-right: 30px;
+}
+
+.translate {
+    display: inline-block;
+    position: relative;
+}
+
+.extra>a {
+    border: 2px solid #cbc;
+    border-radius: 20px;
+}
+
+.translate>a {
+    border-left: 1px solid #cbc;
+    line-height: 36px;
+}
+
+.more a {
+    color: #313131;
+}
+
+.more {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px;
+    right: 0;
+    width: 80px;
+}
+
+.more a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+}
+
+ /* --------------------- */
