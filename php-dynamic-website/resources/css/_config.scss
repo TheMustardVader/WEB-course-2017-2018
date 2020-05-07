@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+$font-family: "Montserrat", sans-serif;
+$title-size: 30px;
+$font-size: 14px;
+
+/* Colors */
+$color-black: hsl(240,8%, 12%);
+$color-black-light: hsl(240,8%, 22%);
+$color-black-lighter: hsl(240,8%, 32%);
+
+$color-white: hsl(0, 0%, 100%);
+$color-white-dark: hsl(0, 0%, 90%);
+$color-white-darker: hsl(0, 0%, 82%);
+$color-white-gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);

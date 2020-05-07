@@ -1,0 +1,199 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #f25252;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.error {
+  font-size: 8rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.error-description {
+  font-size: 2rem;
+  position: absolute;
+  top: 70%;
+  margin: 0;
+  text-align: center;
+}
+
+.error:nth-of-type(1) {
+  -webkit-animation: range 4s infinite;
+          animation: range 4s infinite;
+}
+
+.error:nth-of-type(2) {
+  left: 50%;
+  top: 50%;
+  -webkit-animation: size 4s infinite;
+          animation: size 4s infinite;
+}
+
+.error:nth-of-type(3) {
+  -webkit-animation: range2 4s infinite;
+          animation: range2 4s infinite;
+}
+
+h2 {
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes range {
+  0% {
+    left: 42%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  25% {
+    left: 50%;
+    top: 45%;
+    font-size: 4rem;
+  }
+  50% {
+    left: 58%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  75% {
+    left: 50%;
+    top: 55%;
+    font-size: 4rem;
+  }
+  100% {
+    left: 42%;
+    top: 50%;
+    font-size: 8rem;
+  }
+}
+
+@keyframes range {
+  0% {
+    left: 42%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  25% {
+    left: 50%;
+    top: 45%;
+    font-size: 4rem;
+  }
+  50% {
+    left: 58%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  75% {
+    left: 50%;
+    top: 55%;
+    font-size: 4rem;
+  }
+  100% {
+    left: 42%;
+    top: 50%;
+    font-size: 8rem;
+  }
+}
+
+@-webkit-keyframes range2 {
+  0% {
+    left: 58%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  25% {
+    left: 50%;
+    top: 55%;
+    font-size: 4rem;
+  }
+  50% {
+    left: 42%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  75% {
+    left: 50%;
+    top: 45%;
+    font-size: 4rem;
+  }
+  100% {
+    left: 58%;
+    top: 50%;
+    font-size: 8rem;
+  }
+}
+
+@keyframes range2 {
+  0% {
+    left: 58%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  25% {
+    left: 50%;
+    top: 55%;
+    font-size: 4rem;
+  }
+  50% {
+    left: 42%;
+    top: 50%;
+    font-size: 8rem;
+  }
+  75% {
+    left: 50%;
+    top: 45%;
+    font-size: 4rem;
+  }
+  100% {
+    left: 58%;
+    top: 50%;
+    font-size: 8rem;
+  }
+}
+
+@-webkit-keyframes size {
+  0% {
+    font-size: 8rem;
+  }
+  25% {
+    font-size: 18rem;
+  }
+  50% {
+    font-size: 8rem;
+  }
+  75% {
+    font-size: 18rem;
+  }
+  100% {
+    font-size: 8rem;
+  }
+}
+
+@keyframes size {
+  0% {
+    font-size: 8rem;
+  }
+  25% {
+    font-size: 18rem;
+  }
+  50% {
+    font-size: 8rem;
+  }
+  75% {
+    font-size: 18rem;
+  }
+  100% {
+    font-size: 8rem;
+  }
+}
