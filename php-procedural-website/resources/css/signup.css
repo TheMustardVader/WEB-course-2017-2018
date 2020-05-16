@@ -1,0 +1,231 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+/* Defaults */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: white;
+}
+
+h1, h2, h3 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #34343d;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.signup-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-blend-mode: screen;
+}
+
+.signup-container form {
+  background: white;
+  border-radius: 30px;
+  height: 70vh;
+  max-height: 700px;
+  min-height: 700px;
+  width: 520px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+}
+
+.signup-container form h1 {
+  margin: 12% 0 4% 0;
+  text-transform: uppercase;
+  color: #34343d;
+}
+
+.signup-container form .signup-btn {
+  -webkit-transition: 0.09s;
+  transition: 0.09s;
+  margin-top: 5%;
+  background: none;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
+  background: #68e495;
+  color: #34343d;
+  padding: 6px 90px;
+  border-radius: 15px;
+}
+
+.signup-container form .signup-btn:hover {
+  -webkit-transition: 0.09s;
+  transition: 0.09s;
+  background: #6ce799;
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+}
+
+.signup-container form .additional {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 4%;
+  width: 100%;
+  opacity: 0.8;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup-container form .additional a {
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.signup-container form .additional:hover {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.signup-container form .input-form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signup-container form input,
+.signup-container form label {
+  -webkit-transition: 0.4 ease;
+  transition: 0.4 ease;
+}
+
+.signup-container form label {
+  cursor: text;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: translate(10px, 30px) scale(1);
+          transform: translate(10px, 30px) scale(1);
+  color: #6dd694;
+  position: absolute;
+  z-index: 1;
+}
+
+.signup-container form input:focus,
+.signup-container form input:not(:placeholder-shown) {
+  border-bottom: 1px solid #6dd694;
+}
+
+.signup-container form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.signup-container form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.signup-container form input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.signup-container form input:focus::placeholder {
+  opacity: 0;
+}
+
+.signup-container form input:not(:placeholder-shown) ~ label,
+.signup-container form input:focus ~ label {
+  -webkit-transform: translate(4px, 11px) scale(0.8);
+          transform: translate(4px, 11px) scale(0.8);
+  padding-left: 0px;
+  color: rgba(0, 0, 0, 0.74);
+  z-index: 4;
+  opacity: 0.4;
+}
+
+.signup-container form input {
+  font-size: 14px;
+  padding: 28px 5px 5px 5px;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #6dd694;
+  outline: none;
+  z-index: 3;
+  border-radius: 5px 5px 0 0;
+}
+
+.signup-container form input::-webkit-input-placeholder {
+  opacity: 0.8;
+}
+
+.signup-container form input:-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.signup-container form input::-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.signup-container form input::placeholder {
+  opacity: 0.8;
+}
+
+.signup-container form .signup-error {
+  color: #e53935;
+  font-size: 11px;
+  height: 14px;
+  width: 50%;
+  margin: 3px 0 0 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+@media only screen and (max-width: 450px) {
+  .signup-container form {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow:none;
+  }
+
+  .signup-container{
+    background: white;
+  }
+}
+
+/*# sourceMappingURL=signup.css.map */
