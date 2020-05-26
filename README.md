@@ -5,7 +5,7 @@
 ##### **Projects**
 Data vizualization is as important to a web developer as making interactive web pages. Sometimes it might be hard to choose what kind of approach to use on the website. To make things easier, we created open-source project which can be used as a template for building webistes. Our goal is to stimulate people to create.
 
-[http://nme-illustration.herokuapp.com/](http://nme-illustration.herokuapp.com) 
+[http://constantinss.herokuapp.com/](http://constantinss.herokuapp.com) 
 
 ##### **Goals**
 After completing this module, the you are able to:
