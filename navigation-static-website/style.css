@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #313131;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -70,7 +70,7 @@ a:hover{
     line-height: 20px;
     display: block;
     margin: 3px;
-    color: #313131;
+    color: #272f33;
     padding: 0 5px;
     position: relative;
 }
@@ -89,8 +89,8 @@ a:hover{
     content: "";
     width: 5px;
     height: 5px;
-    border-top: 2px solid #313131;
-    border-right: 2px solid #313131;
+    border-top: 2px solid #272f33;
+    border-right: 2px solid #272f33;
     position: absolute;
     right: 5px;
     transform: rotate(45deg);
@@ -138,7 +138,7 @@ a:hover{
     line-height: 20px;
     display: block;
     margin: 3px;
-    color: #313131;
+    color: #272f33;
     padding: 0 5px;
 }
 
